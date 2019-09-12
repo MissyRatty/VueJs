@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="outerDiv">
  <b-navbar
  toggleable="lg"
  type="dark"
@@ -12,7 +12,7 @@
 
   <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-          <b-nav-item :to="{ name: 'Customer'}">
+          <b-nav-item :to="{ name: 'CustomerList'}">
               Customer
           </b-nav-item>
           <b-nav-item href="#" disabled>Account</b-nav-item>
@@ -51,3 +51,9 @@ export default {
   name: 'Navbar'
 }
 </script>
+
+<style scoped>
+#outerDiv{
+  margin-bottom: 15px;
+}
+</style>
