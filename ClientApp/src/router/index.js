@@ -4,6 +4,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import CustomerList from '@/components/customer/CustomerList.Component'
+import CustomerDetails from '@/components/customer/CustomerDetails'
 import NotFound from '@/components/error-pages/NotFound'
 
 Vue.use(Router)
@@ -26,6 +27,11 @@ export default new Router({
       path: '/customer/list',
       name: 'CustomerList',
       component: CustomerList
+    },
+    {
+      path: '/customer/:id',
+      name: 'CustomerDetails',
+      component: CustomerDetails
     },
     {
       path: '*',

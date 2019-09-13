@@ -19,5 +19,8 @@ export default {
   },
   deleteCustomer (customerId) {
     return Axios.delete(`${RESOURCE_NAME}/${customerId}`)
+  },
+  getCustomerWithAccountDetails (customerId) {
+    return Axios.get(`${RESOURCE_NAME}/${customerId}/account`)
   }
 }
