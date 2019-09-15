@@ -4,6 +4,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import CustomerList from '@/components/customer/CustomerList.Component'
+import CustomerCreate from '@/components/customer/CustomerCreate'
+import CustomerEdit from '@/components/customer/CustomerEdit'
 import CustomerDetails from '@/components/customer/CustomerDetails'
 import NotFound from '@/components/error-pages/NotFound'
 
@@ -27,6 +29,16 @@ export default new Router({
       path: '/customer/list',
       name: 'CustomerList',
       component: CustomerList
+    },
+    {
+      path: '/customer/create',
+      name: 'CustomerCreate',
+      component: CustomerCreate
+    },
+    {
+      path: '/customer/edit/:id',
+      name: 'CustomerEdit',
+      component: CustomerEdit
     },
     {
       path: '/customer/:id',

@@ -7,7 +7,7 @@
                 </b-col>
                 <b-col md="4" class="centerText">
                     <b-button variant="outline-success">
-                       Add New Customer
+                       <router-link :to="{ name: 'CustomerCreate' }"> Add New Customer </router-link>
                    </b-button>
                 </b-col>
                 <b-col md="4">
@@ -122,6 +122,7 @@ export default {
       console.log('View CustomerId is => ' + customerId)
     },
     editCustomer (customerId) {
+      this.$router.push({ name: 'CustomerEdit', params: { id: customerId } })
       console.log('Edit customerId is => ' + customerId)
     },
     removeCustomer (customerId) {
