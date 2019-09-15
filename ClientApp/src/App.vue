@@ -5,25 +5,16 @@
 3. Style, you guessed it, is a style for a template -->
 <template>
  <b-container>
-  <b-row>
-    <b-col>
-      <navbar/>
-    </b-col>
-  </b-row>
-  <b-row>
-    <b-col>
-      <router-view/>
-    </b-col>
-  </b-row>
+    <layout/>
  </b-container>
 </template>
 
 <script>
-import Navbar from '@/components/Navbar'
+import Layout from '@/Layout'
 export default {
   name: 'App',
   components: {
-    Navbar
+    Layout
   }
 }
 </script>

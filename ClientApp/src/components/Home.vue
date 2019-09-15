@@ -2,11 +2,10 @@
 <div class="homeJumbotron">
   <b-jumbotron container-fluid:true>
        <template v-slot:lead>
-           This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-           featured content or information.
+           This is a simple proof-of-concept for doing CRUD with Vue js.
        </template>
        <hr class="my-4"/>
-       <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+       <p>The next stage is linking a login screen to this. Tried it but getting "routing" errors.</p>
     </b-jumbotron>
 </div>
 

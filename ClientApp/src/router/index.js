@@ -2,6 +2,7 @@
 // The @ symbol is a Webpack alias for the root of the project.
 import Vue from 'vue'
 import Router from 'vue-router'
+// import Layout from '@/Layout'
 import Home from '@/components/Home'
 import CustomerList from '@/components/customer/CustomerList.Component'
 import CustomerCreate from '@/components/customer/CustomerCreate'
